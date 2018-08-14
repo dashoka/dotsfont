@@ -13,14 +13,13 @@ Download the font
 ```css
 @font-face {
   font-family: 'dotsfont';
-  src: url('dotsfont.eot');
-  src: url('dotsfont.eot?#iefix') format('embedded-opentype'),
+  src:
        url('dotsfont.woff') format('woff'),
        url('dotsfont.ttf') format('truetype'),
        url('dotsfont.svg#dotsfontregular') format('svg');
 }
 
-[conceal]:not(:active):not(:focus) {
+[conceal] {
   font-family: 'dotsfont';
 }
 ```
