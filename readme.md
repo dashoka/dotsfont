@@ -1,4 +1,5 @@
 DotsFont: A font made of only dots
+(+ Russian and Croatian alphabet)
 ===
 This font is to enable a work-around for `-webkit-text-security` property.
 
