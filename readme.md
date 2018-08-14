@@ -1,6 +1,9 @@
 DotsFont: A font made of only dots
+(+ Russian and Croatian alphabet)
 ===
-This font is to enable a work-around for `-webkit-text-security` property.
+This font is useful if you want to prevent browser from autocompleting passwords and prompting to save them.
+This font shows English, Russian, Croatian alphabet, digits and special characters as dots.
+In other words it enables functionality of `-webkit-text-security` property.
 
 ![Preview](./dotsfont.png)
 
@@ -12,14 +15,13 @@ Download the font
 ```css
 @font-face {
   font-family: 'dotsfont';
-  src: url('dotsfont.eot');
-  src: url('dotsfont.eot?#iefix') format('embedded-opentype'),
+  src:
        url('dotsfont.woff') format('woff'),
        url('dotsfont.ttf') format('truetype'),
        url('dotsfont.svg#dotsfontregular') format('svg');
 }
 
-[conceal]:not(:active):not(:focus) {
+[conceal] {
   font-family: 'dotsfont';
 }
 ```
